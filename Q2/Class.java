@@ -2,7 +2,7 @@ public class SignedText{
     private String fN;
     private String lN;
 
-    public SignedText(String n1;String n2){
+    public SignedText(String n1,String n2){
         fN = n1;
         lN = n2;
     }
@@ -16,8 +16,8 @@ public class SignedText{
 
     public String addSignature(String text){
         String r = "";
-        if(getSignature().equals(text) == -1){
-             r = text + getSinature();
+        if(getSignature().indexOf(text) == -1){
+             r = text + getSignature();
         }
         if(getSignature().indexOf(text) == 0){
              r = getSignature();
