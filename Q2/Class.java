@@ -19,12 +19,12 @@ public class SignedText{
         if(getSignature().indexOf(text) == -1){
              r = text + getSignature();
         }
-        if(getSignature().indexOf(text) == 0){
-             r = getSignature();
+        if(text.indexOf(getSignature()) >= 0){
+             r = text;
         }
 
         if(text.indexOf(getSignature()) == 0){
-             r = text.substring(getSignature().length())+getSignature();
+             r = text.substring(getSignature().length()) + getSignature();
         }
         return r;
     }
