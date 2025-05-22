@@ -32,8 +32,8 @@ Perform a dog walking shift from startHour to endHour, calculate the total incom
     
     4. Determine whether to get a bonus:
     If any of the following two conditions is true, add a $3 bonus:
-    • This hour exactly walked maxDogs
-    • The current hour is between 9 and 17, inclusive.
+    a) This hour exactly walked maxDogs
+    b) The current hour is between 9 and 17, inclusive.
     
     5. Add up the hourly income:
     Add the total income for the current hour (base salary + possible bonus) to a sum.
