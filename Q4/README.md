@@ -13,3 +13,14 @@ Part A
     puzzle[row][col] means row row, column col.
 
 Part B
+    Simply put, it means
+    
+    Starting from the given (row, col), find an element that can be paired downwards;
+    
+    Satisfy "equality" or "add up to 10";
+    
+    After finding it, clear it and return true;
+    
+    If not found, return false;
+    
+    Avoid pairing with itself.
