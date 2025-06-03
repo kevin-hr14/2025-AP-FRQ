@@ -4,7 +4,7 @@ public boolean clearPair(int row, int col){
 
         for(int c = 0; c < puzzle[0].length; c++){
 
-            if(r != row || c != col){
+            if(r != row && c != col){
 
                 if(puzzle[row][col] == puzzle[r][c] || puzzle[row][col] + puzzle[r][c] == 10){
 
